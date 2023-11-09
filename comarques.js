@@ -91,7 +91,7 @@ var graph =
 		{"source": 21, "target": 26},
 		{"source": 21, "target": 23},
 		{"source": 21, "target":  7},
-		{"source": 21, "target": 14},
+		{"source": 21, "target": 13},
 		{"source": 23, "target": 26},
 		{"source": 23, "target":  7},
 		{"source": 23, "target": 41},
@@ -116,7 +116,39 @@ var graph =
 		{"source": 42, "target": 41},
 		{"source": 42, "target": 13},
 		{"source": 42, "target": 26},
-		{"source": 42, "target": 7}
+		{"source": 42, "target":  7},
+		{"source": 41, "target":  7},
+		{"source": 41, "target": 11},
+		{"source": 41, "target": 13},
+		{"source": 13, "target": 11},
+		{"source": 11, "target":  5},
+		{"source": 11, "target":  7},
+		{"source": 11, "target":  2},
+		{"source": 11, "target": 17},
+		{"source":  5, "target":  7},
+		{"source":  5, "target":  0},
+		{"source":  5, "target":  2},
+		{"source":  5, "target": 16},
+		{"source": 17, "target": 12},
+		{"source": 17, "target":  2},
+		{"source":  2, "target":  0},
+		{"source":  2, "target": 12},
+		{"source":  0, "target":  8},
+		{"source":  0, "target": 12},
+		{"source":  0, "target": 16},
+		{"source":  0, "target": 38},
+		{"source": 38, "target":  8},
+		{"source": 38, "target": 12},
+		{"source":  8, "target": 16},
+		{"source":  8, "target": 31},
+		{"source":  8, "target": 32},
+		{"source":  8, "target":  9},
+		{"source": 31, "target": 32},
+		{"source": 31, "target": 16},
+		{"source": 32, "target":  9},
+		{"source": 32, "target": 39},
+		{"source": 39, "target":  9},
+		{"source":  9, "target": 24}
 	]};
 
 var color = d3.scaleOrdinal(d3.schemeCategory10);
@@ -137,7 +169,7 @@ var svg = d3.select("body").append("svg")
   /*if (error) throw error;*/
 
   var linksForce = d3.forceLink(graph.links)
-      .distance(100);
+      .distance(75);
 
 
   var node_drag = d3.drag()

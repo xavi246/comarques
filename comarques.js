@@ -1,5 +1,5 @@
-var width = 960,
-    height = 600;
+var width  = 900,
+    height = 900;
 
 var graph = 
 	{"nodes": [

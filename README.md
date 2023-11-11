@@ -1,7 +1,7 @@
 # comarques
-Direct-force graph
+Force-Directed graph
 
-HTML i D3 per mostrar un gràfic direct-force.
+HTML i D3 per mostrar un gràfic force-directed.
 
 Els nodes són les comarques, els enllaços uneixen comarques veïnes.
 
